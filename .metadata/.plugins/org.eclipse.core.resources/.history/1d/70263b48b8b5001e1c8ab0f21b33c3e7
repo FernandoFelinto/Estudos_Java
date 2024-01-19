@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in); // iniciar para fazer entrada de dados
+		
+		String nome;
+		nome = sc.next(); //para ler uma String
+
+		int num;
+		num = sc.nextInt();
+		
+		System.out.printf("O nome digitado foi: %s e o número inteiro foi: %d", nome, num);
+		sc.close(); //encerrar o scanner
+	}
+
+}

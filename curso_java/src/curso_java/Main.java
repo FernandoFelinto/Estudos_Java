@@ -1,0 +1,23 @@
+package curso_java;
+
+import java.util.Locale;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int y = 32;
+		double x = 10.35784;
+		Locale.setDefault(Locale.US); // usar o ponto como separador
+		System.out.println(y);
+		System.out.printf("%.2f\n",x); //duas casas decimais = %.2f 
+		System.out.println("O resultado é "+ x + " metros.");
+		System.out.printf("O resultado de 'x' é: %f e o valor de 'y' é: %d\n", x, y);
+	
+		String nome = "Maria";
+		int idade = 31;
+		double renda = 4000.00;
+		
+		System.out.printf("%s tem %d anos e ganha R$ %.2f\n", nome, idade, renda);
+	}
+
+}

@@ -1,0 +1,75 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	
+	class Contas{
+		public static int soma(int x, int y) {
+			return x + y;
+		}
+		
+		public static double raio(double r) {
+			double area = 3.14159 * Math.pow(r, 2);
+			return area;
+		}
+		
+		public static int diferenca(int x, int y, int z, int k) {
+			int sub = (x * y) - (z * k);
+			return sub;
+		}
+	}
+	
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		/*
+		****** EXERCÍCIO 1 ******
+		Faça um programa para ler dois valores inteiros, e depois mostrar na tela a soma desses números com uma
+		mensagem explicativa, conforme exemplos. Entrada: '10' '30' -> Saída: 'SOMA = 40'
+		*/
+		
+		/*
+		int num1, num2;
+		num1 = sc.nextInt();
+		num2 = sc.nextInt();
+		System.out.println("SOMA = " + Contas.soma(num1,num2));
+		*/
+		
+		
+		/*
+		 ****** EXERCÍCIO 2 ******
+		 Faça um programa para ler o valor do raio de um círculo, e depois mostrar o valor da área deste círculo 
+		 com quatro casas decimais conforme exemplos. Fórmula da área: area = π . raio2 Considere o valor de π = 3.14159
+		 Entrada: '100.64' -> Saída: 'A=31819.3103'
+		 */
+		
+		/*
+		double raio;
+		raio = sc.nextDouble();
+		System.out.printf("A=%.4f\n", Contas.raio(raio));
+		
+		*/
+		
+		/*
+		 ****** EXERCÍCIO 3 ******
+		 Fazer um programa para ler quatro valores inteiros A, B, C e D. 
+		 A seguir, calcule e mostre a diferença do produto de A e B pelo produto de C e D 
+		 segundo a fórmula: DIFERENCA = (A * B - C * D). Entrada: '5' '6' '7' '8' -> Saída: 'DIFERENCA = -26'
+		 */
+		
+		
+		int x, y, z, k;
+		x = sc.nextInt();
+		y = sc.nextInt();
+		z = sc.nextInt();
+		k = sc.nextInt();
+		System.out.printf("DIFERENCA = %d\n", Contas.diferenca(x, y, z, k));
+		
+		
+		
+		sc.close();
+
+	}
+
+}

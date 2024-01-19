@@ -1,0 +1,33 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US); //se importar o Lacale antes do Scanner tem que digitar os números com o ponto(.)
+		
+		Scanner sc = new Scanner(System.in); // iniciar para fazer entrada de dados
+		
+		String nome;
+		nome = sc.next(); //para ler uma String
+
+		int num;
+		num = sc.nextInt(); // para ler inteiros
+		
+		double num2;
+		num2 = sc.nextDouble(); //para ler float OBS: Se não colocar o 'Locale.US' tem que digitar com ','
+		
+		char letra;
+		letra = sc.next().charAt(0);//pega o primeiro caracter da String, scaneia um caracter
+		
+		System.out.printf("O nome digitado foi: %s e o número inteiro foi: %d\n", nome, num);
+		System.out.printf("O número float é: %.2f\n",num2); // o printf imprime com a vírgula (,)
+		System.out.println("O número float é: " + num2); // o println imprime com o ponto (.)
+		System.out.println("O caracter é" + letra);
+		
+
+		sc.close(); //encerrar o scanner
+	}
+
+}

@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in); // iniciar para fazer entrada de dados
+		
+		String nome;
+		nome = sc.next(); //para ler uma String
+
+		int num;
+		num = sc.nextInt(); // para ler inteiros
+		
+		double num2;
+		num2 = sc.nextDouble(); //para ler float OBS: Se não colocar o 'Locale.US' tem que digitar com ','
+		
+		System.out.printf("O nome digitado foi: %s e o número inteiro foi: %d", nome, num);
+		System.out.printf("O número float é: %f",num2);
+		
+		sc.close(); //encerrar o scanner
+	}
+
+}
